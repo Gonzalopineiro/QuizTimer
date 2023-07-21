@@ -1,0 +1,41 @@
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>QuizTimer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>QuizTimer</h1>
+        <div class="datos" id = "datos">
+            <label for="horas">Cantidad de horas:</label>
+            <input type="number" id="horas" name="horas"/>
+    
+            <br>
+    
+            <label for="preguntas">Cantidad de preguntas:</label>
+            <input type="number" id="preguntas" name="preguntas" />
+    
+            <button id="comenzarBtn">Comenzar</button>
+        </div>
+    
+    
+        <div class="timer" id = "timer">
+            
+             <div class="tiempo-pregunta">
+                 <span id="preg-horas">00:</span>
+                 <span id="preg-min">00:</span> 
+                 <span id="preg-sec">00</span> 
+              </div>
+
+              <div class="pregunta"><h1>Pregunta: </h1><span id="NumeroPregunta">1</span></div>
+             <div class="botones">
+                 <button id="siguiente">Siguiente</button>
+                 <button id="reset">Reset</button>
+             </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
